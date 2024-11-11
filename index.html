@@ -122,14 +122,21 @@
 </section>
 
 
+
 <!-- Teaser video -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Video sourced from Google Drive -->
-        <source src="https://drive.google.com/uc?export=download&id=17JO4BuVWok1yJsYWWz4odQ7blD199tdk" type="video/mp4">
-      </video>
+      <div class="video-container">
+        <iframe 
+          width="100%" 
+          height="500px" 
+          src="https://www.youtube.com/embed/PKPRtbmo5Y0?autoplay=1&mute=1&loop=1&playlist=PKPRtbmo5Y0" 
+          frameborder="0" 
+          allow="autoplay; encrypted-media; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
       <h2 class="subtitle has-text-centered">
         Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.
       </h2>
@@ -137,6 +144,7 @@
   </div>
 </section>
 <!-- End teaser video -->
+
 
 
 <!-- Paper abstract -->
@@ -220,43 +228,6 @@
 <!-- End youtube video -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
 
 <!-- Paper poster -->
 <section class="hero is-small is-light">
@@ -277,7 +248,23 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@inproceedings{yadav-etal-2024-pythonsaga,
+        title = "{P}ython{S}aga: Redefining the Benchmark to Evaluate Code Generating {LLM}s",
+        author = "Yadav, Ankit  and
+          Beniwal, Himanshu  and
+          Singh, Mayank",
+        editor = "Al-Onaizan, Yaser  and
+          Bansal, Mohit  and
+          Chen, Yun-Nung",
+        booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2024",
+        month = nov,
+        year = "2024",
+        address = "Miami, Florida, USA",
+        publisher = "Association for Computational Linguistics",
+        url = "https://aclanthology.org/2024.findings-emnlp.996",
+        pages = "17113--17126",
+        abstract = "Driven by the surge in code generation using large language models (LLMs), numerous benchmarks have emerged to evaluate these LLMs capabilities. We conducted a large-scale human evaluation of *HumanEval* and *MBPP*, two popular benchmarks for Python code generation, analyzing their diversity and difficulty. Our findings unveil a critical bias towards a limited set of programming concepts, neglecting most of the other concepts entirely. Furthermore, we uncover a worrying prevalence of easy tasks that can inflate model performance estimations. To address these limitations, we propose a novel benchmark, *PythonSaga*, featuring 185 hand-crafted prompts in a balanced representation of 38 programming concepts across diverse difficulty levels. The robustness of our benchmark is demonstrated by the poor performance of existing Code-LLMs. The code and data set are openly available to the NLP community at this [URL](https://github.com/PythonSaga/PythonSaga).",
+    }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
